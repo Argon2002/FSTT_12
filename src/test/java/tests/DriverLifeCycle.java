@@ -18,7 +18,7 @@ protected WebDriver driver;
         options.addArguments("--no-sandbox");
         options.addArguments("--disable-dev-shm-usage");
         options.addArguments("--headless");
-        driver = new ChromeDriver();
+        driver = new ChromeDriver(options);
         driver.manage().window().maximize();
         driver.get("http://openchrome-demo.orangehrmlive.com/"); 
         driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(5));
