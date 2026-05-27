@@ -27,6 +27,6 @@ protected WebDriver driver;
     @AfterEach
     public void teardown(){
         // close Chrome
-        driver.close();
+        driver.quit();
     }
 }
